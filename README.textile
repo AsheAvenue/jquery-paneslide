@@ -1,6 +1,6 @@
 h1. jQuery Paneslide
 
-Paneslide is a jQuery plugin that slides a pane in from the left or right. Heavily influenced by and based on jquery-paneslide by Scott Robbin.
+Paneslide is a jQuery plugin that slides a pane in from the left or right. Heavily influenced by and based on <a href="http://srobbin.com/jquery-plugins/pageslide/">jquery-paneslide</a> by Scott Robbin.
 
 h2. Options
 
