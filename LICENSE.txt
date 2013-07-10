@@ -1,9 +1,9 @@
-jquery-pageslide is released under two licenses: MIT and GPL. You may pick the license that best suits your development needs. The text of both licenses are provided below.
+jquery-paneslide is released under two licenses: MIT and GPL. You may pick the license that best suits your development needs. The text of both licenses are provided below.
 
 MIT License
 ----
 
-Copyright (c) 2009 Scott Robbin, Derek Perez
+Copyright (c) 2013 Ashe Avenue
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
