@@ -135,8 +135,8 @@
     $.fn.paneslide.defaults = {
         speed:          200,        // Accepts standard jQuery effects speeds (i.e. fast, normal or milliseconds)
         position:      'right',     // Accepts 'left' or 'right'
-        modal:          false,      // If set to true, you must explicitly close paneslide using $.paneslide.close();
-        iframe:         true,       // By default, linked pages are loaded into an iframe. Set this to false if you don't want an iframe.
+        modal:          true,      // If set to true, you must explicitly close paneslide using $.paneslide.close();
+        iframe:         false,       // By default, linked pages are loaded into an iframe. Set this to false if you don't want an iframe.
         href:           null,       // Override the source of the content. Optional in most cases, but required when opening paneslide programmatically.
         maincontainer:  null,       // A container that should be resized according to the width of the paneslide
     };

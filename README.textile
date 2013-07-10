@@ -14,7 +14,7 @@ Which side of the page should the pane be displayed on? Accepts 'left' or 'right
 
 h3. modal
 
-By default, when paneslide opens, you can click on the document to close it. If modal is set to 'true', then you must explicitly close paneslide using $.paneslide.close(); (default=false)
+By default, when paneslide opens, you can click on the document to close it. If modal is set to 'true', then you must explicitly close paneslide using $.paneslide.close(); (default=true)
 
 h3. iframe
 
