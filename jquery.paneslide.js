@@ -115,7 +115,6 @@
             
             // Prevent the default behavior and stop propagation
             e.preventDefault();
-            e.stopPropagation();
             
             if ( $paneslide.is(':visible') && $self[0] == _lastCaller ) {
                 // If we clicked the same element twice, toggle closed
@@ -175,7 +174,7 @@
             maincontainer = $paneslide.data( 'maincontainer'),
             slideAnimateIn = {},
             maincontainerAnimateIn = {};
-        // If the slide isn't open, just ignore the call
+            
         if( $paneslide.is(':hidden') || _sliding ) return;	        
         _sliding = true;
         
@@ -183,13 +182,13 @@
             case 'left':
                 slideAnimateIn['left'] = '-=' + slideWidth;
                 if(maincontainer) {
-                    maincontainerAnimateIn['margin-left'] = '-=0';
+                    maincontainerAnimateIn['margin-left'] = '-=' + slideWidth;
                 }
                 break;
             default:
                 slideAnimateIn['right'] = '-=' + slideWidth;
                 if(maincontainer) {
-                    maincontainerAnimateIn['margin-right'] = '-=0';
+                    maincontainerAnimateIn['margin-right'] = '-=' + slideWidth;
                 }
                 break;
         }
@@ -207,11 +206,6 @@
     }
 	
 	/* Events */
-	
-	// Don't let clicks to the paneslide close the window
-    $paneslide.click(function(e) {
-        e.stopPropagation();
-    });
 
 	// Close the paneslide if the document is clicked or the users presses the ESC key, unless the paneslide is modal
 	$(document).bind('click keyup', function(e) {
