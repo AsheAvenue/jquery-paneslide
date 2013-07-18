@@ -71,7 +71,7 @@
         switch( position ) {
             case 'right':
                 $paneslide.css({ left: 'auto', right: '-' + slideWidth + 'px' });
-                slideAnimateIn['right'] = '+=0';
+                slideAnimateIn['right'] = '+=' + slideWidth;
                 
                 if(maincontainer) {
                     maincontainerAnimateIn['margin-right'] = slideWidth;
@@ -80,7 +80,7 @@
                 break;
             default:
                 $paneslide.css({ left: '-' + slideWidth + 'px', right: 'auto' });
-                slideAnimateIn['left'] = '+=0';
+                slideAnimateIn['left'] = '+=' + slideWidth;
                 
                 if(maincontainer) {
                     maincontainerAnimateIn['margin-left'] = slideWidth;
@@ -88,6 +88,7 @@
                 
                 break;
         }
+        
                     
         // Animate the maincontainer resize
         if(maincontainer) {
